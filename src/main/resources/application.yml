@@ -1,3 +1,6 @@
+server:
+  servlet:
+    context-path: /
 spring:
   application:
     name: demo-camunda
@@ -8,3 +11,17 @@ spring:
     driver-class-name: org.postgresql.Driver
   main:
     web-application-type: servlet
+  jpa:
+    show-sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
