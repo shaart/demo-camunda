@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: demo-camunda
+  datasource:
+    url: jdbc:postgres://localhost:5432/demo_camunda
+    username: user
+    password: password
+  main:
+    web-application-type: reactive
