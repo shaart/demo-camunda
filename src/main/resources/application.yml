@@ -2,8 +2,9 @@ spring:
   application:
     name: demo-camunda
   datasource:
-    url: jdbc:postgres://localhost:5432/demo_camunda
+    url: jdbc:postgresql://localhost:5432/demo_camunda
     username: user
     password: password
+    driver-class-name: org.postgresql.Driver
   main:
-    web-application-type: reactive
+    web-application-type: servlet

@@ -13,7 +13,7 @@ class TestController {
     private val log = logger()
 
     @GetMapping
-    suspend fun getAll(): ResponseDto {
+    fun getAll(): ResponseDto {
         log.info("Got request for getAll()")
         return ResponseDto("test")
     }
